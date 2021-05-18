@@ -5,7 +5,7 @@ Rest API Tasks is a TypeScript project where you can save tasks.
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you need Node.js and a node global package, Yarn, TypeScript installed in your environement.
 
 ### Node
 - #### Node installation on Windows
@@ -49,8 +49,14 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ cd rest_API_ts-swagger-lowdb
     $ npm install
 
+---
+
+## Building the project
+
+    $ npm run build
+    
+---
 
 ## Running the project
 
-    $ npm run build
     $ npm run start
