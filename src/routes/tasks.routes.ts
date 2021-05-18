@@ -3,7 +3,7 @@ import {getTasks} from '../controllers/task.controller'
 
 const router = Router()
 
-router.get('/tasks', getTasks)
+router.get("/tasks", getTasks);
 
 router.get('/tasks/count', (req, res) => res.send('Hello Wold!'))
 

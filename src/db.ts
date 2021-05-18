@@ -1,22 +1,22 @@
-import lowdb from 'lowdb'
-import FileSync from 'lowdb/adapters/FileSync'
+import lowdb from "lowdb";
+import FileSync from "lowdb/adapters/FileSync";
 
 type Task = {
-    id: string;
-    name: string;
-    description: string
-}
+  id: string;
+  name: string;
+  description: string;
+};
 
 type Schema = {
-    tasks: Task[]
-}
+  tasks: Task[];
+};
 
 let db: lowdb.LowdbSync<Schema>;
 
-export const createConnection = () => {
-    const adapter = new FileSync('db.json') 
-    const db = lowdb(adapter)
-    db.defaults({ tasks: []}).write();
-}
+export const createConnection = async () => {
+  const adapter = new FileSync<Schema>("db.json");
+  db = lowdb(adapter);
+  db.defaults({ tasks: [] }).write();
+};
 
 export const getConnection = () => db;
