@@ -1,6 +1,6 @@
 # Rest API Tasks
 
-Rest API Tasks is a TypeScript project where you can save tasks.
+Rest API Tasks is a TypeScript project where you can save tasks, edit, delete, etc, basically you can manage them.
 
 ---
 ## Requirements
