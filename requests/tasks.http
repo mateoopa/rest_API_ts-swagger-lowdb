@@ -1,12 +1,31 @@
 @api = http://localhost:3000
 
+### Get tasks
 GET {{api}}/tasks
 
-### 
+### Get task by id
+GET {{api}}/tasks/Xii0ki1NrGZfpYmLd13U3
+
+### Delete task by id
+DELETE {{api}}/tasks/mG_lxGo_nYEkQOR6sx0Rb
+
+### Updating task by id
+PUT {{api}}/tasks/tbhXO1izFLIiWWDFwpghN
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "description": "Test description"
+}
+
+### Insert task
 POST {{api}}/tasks
 Content-Type: application/json
 
 {
-  "name": "my first task",
-  "description": "I have to do something"
+  "name": "Test name",
+  "description": "Test description"
 }
+
+### Total tasks
+GET {{api}}/tasks/count
